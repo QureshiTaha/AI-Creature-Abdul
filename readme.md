@@ -173,3 +173,7 @@ Licensed under the **MIT License** – see [`LICENSE`](LICENSE) for details.
 > Crafted with 🧠☕❤️ & late‑night curiosity by **[@QureshiTaha](https://github.com/QureshiTaha)**.
 
 > [**Github**](https://github.com/QureshiTaha/AI-Creature-Abdul) | [**LinkedIn**](https://in.linkedin.com/in/taha-qureshi-full-stack-developer)
+
+
+Check out more cool stuff at [tahaqureshi.com](https://tahaqureshi.com)
+
