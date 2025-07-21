@@ -1,0 +1,9 @@
+ai-brain/fine-tuned-model
+ai-brain/engine/__pycache__
+ai-gate/node_modules
+ai-gate/package-lock.json
+ai-dashboard/package-lock.json
+ai-dashboard/node_modules
+ai-brain/engine/*.gguf
+ai-brain/dataset/sessions/*
+ai-brain/dataset/user_session_history/*

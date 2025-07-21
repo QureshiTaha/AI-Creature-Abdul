@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Brain Dashboard</title>
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+</head>
+
+<body>
+    <h1>Talk to Your AI Brain</h1>
+    <input id="input" type="text" placeholder="Ask something...">
+    <button onclick="sendMessage()">Ask</button>
+    <p id="response"></p>
+
+    <script>
+        const socket = io('http://localhost:5000');
+
+        function sendMessage() {
+            const val = document.getElementById('input').value;
+            socket.emit('ask', val);
+        }
+
+        socket.on('response', (data) => {
+            if (data.output) {
+                document.getElementById('response').innerText = data.output;
+            } else {
+                document.getElementById('response').innerText = 'AI failed to respond';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

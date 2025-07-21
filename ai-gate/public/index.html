@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Dashboard</title>
+</head>
+
+<body>
+    <h1>AI Monitoring Dashboard</h1>
+    <button id="evolveBtn">Trigger Evolution</button>
+    <h2>Status Updates</h2>
+    <ul id="statusList"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io('http://localhost:5000');
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('ai-status', (msg) => {
+            const li = document.createElement('li');
+            li.innerText = msg;
+            document.getElementById('statusList').appendChild(li);
+        });
+
+        document.getElementById('evolveBtn').onclick = () => {
+            fetch('/api/brain/evolve')
+                .then(res => res.json())
+                .then(data => alert('Evolution: ' + data.status));
+        };
+    </script>
+</body>
+
+</html>

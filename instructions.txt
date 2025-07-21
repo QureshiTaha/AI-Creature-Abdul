@@ -1,0 +1,14 @@
+python -m uvicorn main:app --reload
+
+> Terminal 2 Python
+cd AI-bot\ai-brain
+python -m uvicorn main:app --reload
+
+
+> Terminal 2 NodeJS
+cd AI-bot\ai-gate 
+npm run serve
+
+> Terminal 3 React JS
+cd AI-bot\ai-dashboard
+npm start
