@@ -3,3 +3,6 @@ uvicorn
 transformers
 torch
 datasets
+llama-cpp-python
+sympy
+duckduckgo-search

@@ -7,3 +7,4 @@ ai-dashboard/node_modules
 ai-brain/engine/*.gguf
 ai-brain/dataset/sessions/*
 ai-brain/dataset/user_session_history/*
+ai-brain/brain.json

@@ -94,7 +94,7 @@ const SidebarDrawer = ({
       {/* Chat List */}
       <Box sx={{ flexGrow: 1, overflowY: 'auto', overflowX: 'clip', mb: 2 }}>
         <List >
-          {chatList.map((chatID) => (
+          {chatList?.map((chatID) => (
             <StyledListItem
               key={chatID}
               onClick={() => handleChatSelect(chatID)}

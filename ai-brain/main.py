@@ -16,6 +16,10 @@ class BrainInput(BaseModel):
     userID: str
     chatID: str
 
+@app.get("/health")
+async def checkStatus():
+    print(f"Running Health Check")
+    return {"status": "OK"}
 
 @app.post("/think-stream")
 async def stream_thinking(data: BrainInput):
